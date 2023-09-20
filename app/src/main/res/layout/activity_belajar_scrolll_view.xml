@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BelajarScrolllViewActivity">
+
+    <ImageView
+        android:id="@+id/IvBackground"
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:src="@drawable/okee"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:layout_marginStart="15dp"
+        android:id="@+id/IvPicture"
+        android:layout_width="80dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/gang" />
+
+    <TextView
+        android:id="@+id/gangstarap"
+        android:layout_marginStart="15dp"
+        android:layout_toRightOf="@id/IvPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:textSize="20sp"
+        android:text="gangsta rap"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/by"
+        android:layout_marginStart="15dp"
+        android:layout_toRightOf="@id/IvPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textSize="12sp"
+        android:text="benjamin zephaniah"
+
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/star"
+    android:layout_width="15dp"
+    android:layout_height="15dp"
+    android:layout_toRightOf="@id/by"
+    android:layout_below="@id/gangstarap"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/baseline_star_24"/>
+
+    <TextView
+        android:id="@+id/lima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5.0"
+        android:textColor="@color/white"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/gangstarap"
+        android:layout_toRightOf="@id/star"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="132 review"
+        android:layout_toRightOf="@id/lima"
+        android:layout_below="@id/gangstarap"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="5dp"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        app:cardBackgroundColor="#20FFFFFF"
+        android:layout_below="@id/by"
+        android:layout_marginTop="80dp">
+
+        <TextView
+            android:layout_marginTop="1dp"
+            android:textSize="12dp"
+            android:layout_marginStart="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="singing"
+            android:textColor="#8F1694CF"
+            android:fontFamily="@font/poppins_semibold"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="5dp"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        app:cardBackgroundColor="#0ABAB9B9"
+        android:layout_below="@id/by"
+        android:layout_marginTop="80dp">
+
+        <TextView
+            android:layout_marginTop="1dp"
+            android:id="@+id/textengah"
+            android:textSize="12dp"
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiction"
+            android:textColor="#8F1694CF"
+            android:fontFamily="@font/poppins_semibold"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/crime"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="5dp"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        app:cardBackgroundColor="#17BAB9B9"
+        android:layout_below="@id/by"
+        android:layout_marginTop="80dp">
+
+        <TextView
+            android:layout_marginTop="1dp"
+            android:textSize="12dp"
+            android:layout_marginStart="31dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="crime"
+            android:textColor="#8F1694CF"
+            android:fontFamily="@font/poppins_semibold"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_below="@+id/crime">
+
+
+        <RelativeLayout
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/sypnopsis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Synopsis"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:id="@+id/lorep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lorepipsum"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_below="@id/sypnopsis"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+    <Button
+        android:backgroundTint="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:text="countinue Reading"
+        android:textColor="@color/white"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/baseline_keyboard_arrow_left_23"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/baseline_bookmark_23" />
+    <TextView
+        android:id="@+id/Riview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Review"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_below="@id/IvPicture"
+        android:layout_marginTop="320dp"
+        android:layout_marginStart="20dp"/>
+<ScrollView
+    android:layout_below="@id/Riview"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv1"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/WoddyBecker1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Woody Peecker"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/POLISMEN1"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bellowWOddpcker"/>
+
+            <TextView
+                android:id="@+id/Polis21"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bellowWOddpcker"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="20dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp">
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/nigga"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@id/cv1"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/WoddyBeckerr"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carti playboy"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/POLISMEN"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bellowWOddpcker"/>
+
+            <TextView
+                android:id="@+id/Polis2"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bellowWOddpcker"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="20dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp">
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/nigga" />
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+
+
+
+</ScrollView>
+</RelativeLayout>
+
